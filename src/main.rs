@@ -1,4 +1,4 @@
-use est_nihil_edere::{Game, run, new_game};
+use est_nihil_edere::{new_game, run};
 
 fn main() {
     let game = new_game();

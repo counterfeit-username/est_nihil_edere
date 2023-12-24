@@ -2,7 +2,7 @@ use std::io::{self, Write};
 
 pub struct Command {
     pub name: String,
-    args: Vec<String>,
+    pub args: Vec<String>,
 }
 
 impl Command {
