@@ -7,15 +7,34 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'inedia'",
+            "name": "Debug unit tests in library 'est_nihil_edere'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=est_nihil_edere"
+                ],
+                "filter": {
+                    "name": "est_nihil_edere",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'est_nihil_edere'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=inedia",
-                    "--package=inedia"
+                    "--bin=est_nihil_edere",
+                    "--package=est_nihil_edere"
                 ],
                 "filter": {
-                    "name": "inedia",
+                    "name": "est_nihil_edere",
                     "kind": "bin"
                 }
             },
@@ -25,16 +44,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'inedia'",
+            "name": "Debug unit tests in executable 'est_nihil_edere'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=inedia",
-                    "--package=inedia"
+                    "--bin=est_nihil_edere",
+                    "--package=est_nihil_edere"
                 ],
                 "filter": {
-                    "name": "inedia",
+                    "name": "est_nihil_edere",
                     "kind": "bin"
                 }
             },
