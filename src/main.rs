@@ -1,4 +1,4 @@
-use est_nihil_edere::{run};
+use est_nihil_edere::run;
 
 fn main() {
     run()
