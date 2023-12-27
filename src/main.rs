@@ -1,6 +1,5 @@
-use est_nihil_edere::{new_game, run};
+use est_nihil_edere::{run};
 
 fn main() {
-    let game = new_game();
-    run(game)
+    run()
 }

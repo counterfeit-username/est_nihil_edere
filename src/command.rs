@@ -17,11 +17,11 @@ impl Command {
             .read_line(&mut response)
             .expect("Error reading command please try again.");
 
-        let mut elements = response.split_whitespace().map(|s: &str| s.to_owned());
+        let mut words = response.split_whitespace().map(|s: &str| s.to_owned());
 
         let command = Command {
-            name: elements.next().expect("Error parsing command."),
-            args: elements.collect(),
+            name: words.next().expect("Error parsing command."),
+            args: words.collect(),
         };
 
         command
